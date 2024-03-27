@@ -10,7 +10,7 @@ import * as tf from "@tensorflow/tfjs";
 import * as qna from "@tensorflow-models/qna";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
-import { Fragment } from "react";
+//import { Fragment } from "react";
 
 const App = () => {
   // 3. Setup references and state hooks
@@ -60,7 +60,7 @@ const App = () => {
             <Loader type="TailSpin" color="#00BFFF" height={100} width={100} />
           </div>
         ) : (
-          <React.Fragment>
+          <>
             <div className="section">
               Enter your Text here :
               <textarea ref={passageRef} rows="20" cols="300"></textarea>
@@ -88,7 +88,7 @@ const App = () => {
                   ))
                 : ""}
             </div>
-          </React.Fragment>
+          </>
         )}
       </header>
     </div>
