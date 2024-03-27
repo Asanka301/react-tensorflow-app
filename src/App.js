@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./App.css";
 
 // 0. Install dependencies
